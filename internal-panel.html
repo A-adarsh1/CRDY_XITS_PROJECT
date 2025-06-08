@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internal Emulaotor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top h-100">
+    <div class="container">
+      <!-- back to home page -->
+
+      <a href="index.html" class="me-2 text-decoration-none text-light d-flex align-items-center">
+        <i class="bi bi-arrow-left-circle" style="font-size: 1.8rem; color: #000"></i>
+      </a>
+
+      <!-- Brand logo and name -->
+      <a class="navbar-brand d-flex align-items-center" href="./index.html">
+        <img src="./assets/logo.jpg" alt="logo" width="50" height="50" class="rounded-circle me-2" />
+        <span class="fw-bold">CRDY Products</span>
+      </a>
+
+      <!-- Toggle button for small screens -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link underline-hover spcColor" href="./index.html#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link underline-hover spcColor" href="./index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link underline-hover spcColor" href="./index.html#products">Products</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="btn btn-outline-dark fw-bold contactBg" href="./index.html#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="bypassSection pt-0 pb-0 pt-md-5 pb-md-5" style="padding: 4px">
+    <div class="container">
+      <h2 class="text-success fw-bold h4 mb-4">Internal-Emulator</h2>
+
+      <p class="features mb-4">
+        <strong>Panel Payment Method:</strong>
+        &nbsp;&nbsp;
+        <b style="color: #f3ba2f">Binance</b>,
+        <b style="color: #669966">UPI</b>, <b style="color: #4285f4">G</b><b style="color: #ea4335">P</b><b
+          style="color: #fbbc04">a</b><b style="color: #34a853">y</b>
+      </p>
+
+      <div class="table-responsive mb-4">
+        <table class="table table-success table-striped">
+          <thead>
+            <tr>
+              <th>Amount ($)</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-info">
+              <td>1$</td>
+              <td>1 Day</td>
+            </tr>
+            <tr class="table-info">
+              <td>3$</td>
+              <td>3 week</td>
+            </tr>
+            <tr class="table-info">
+              <td>20$</td>
+              <td>Lifetime</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="text-center my-4">
+        <b>OR</b><br /><br />
+        <b>
+          You can exchange with level 50+
+          <span style="color: #ffba00">Free Fire</span> ID (server Bangladesh,
+          India) = Package time will be decided by seeing ID collection,
+          level, etc.
+        </b>
+        <p>
+          (Only through discord channel
+          <a href="https://discord.gg/ZtVdDAMHfq" style="text-decoration: none; color: #780001; font-weight: bold"
+            target="_blank">
+            CRDY Gaming's</a>
+          - DM Admin
+          <b style="text-decoration: none; color: #780001">crdy_dev</b>)
+        </p>
+      </div>
+
+      <h3 class="text-success mb-4">Image Preview</h3>
+
+      <div class="row g-3">
+        <div class="col-md-6">
+          <img src="./assets/internal-p-2.png" class="img-fluid rounded shadow" alt="bypass-login"
+            style="height: 70vh" />
+        </div>
+        <div class="col-md-6">
+          <img src="./assets/internal-p-3.jpg" class="img-fluid rounded shadow" alt="bypass-mods"
+            style="height: 70vh" />
+        </div>
+        <div class="col-md-6">
+          <img src="./assets/internal-p-4.png" class="img-fluid rounded shadow" alt="bypass-login" />
+        </div>
+        <div class="col-md-6">
+          <img src="./assets/internal-p-5.png" class="img-fluid rounded shadow" alt="bypass-mods" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- purchase Section -->
+  <section class="contact-section d-flex align-items-center justify-content-center text-center footer-ahead">
+    <div>
+      <h1 class="display-3 fw-bold">Select offers</h1>
+      <p class="lead mt-3" id="accountCreateTxt">offer available</p>
+
+      <div class="container-fluid">
+        <form class="mt-4" method="post" name="payment-form" id="paymentForm">
+
+           <!-- hidden page name -->
+           <input type="hidden" name="panel-name" value="Internal Panel">
+
+          <!-- Time Period Selection -->
+          <div class="d-flex align-items-center gap-3 mb-3 shift_right">
+            <label for="timePeriod" class="form-label">Time Period</label>
+            <select class="form-select select-text" id="timePeriod" aria-label="Select Time Period"
+              style="min-width: 40%;" name="panel-duration">
+              <option value="1" selected>1 Day</option>
+              <option value="2">30 Days</option>
+              <option value="3">Lifetime</option>
+            </select>
+          </div>
+
+          <!-- Amount Display -->
+          <div class="d-flex align-items-center gap-3 shift_right">
+            <label for="amount" class="form-label">Amount</label>
+            <input type="text" id="amount" class="form-control" value="1 $" name="panel-price" style="min-width: 40%;
+                text-align: center;
+                text-align-last: center;
+              " readonly />
+          </div>
+
+          <!-- Payment option -->
+
+          <div class="d-flex align-items-center gap-3 mb-3 flex-wrap mt-3 shift_right">
+            <label for="paymentOption" class="payment-label">Payment option</label>
+            <select class="payment-select form-select select-text" id="paymentOption" aria-label="Select Payment Option"
+              style="min-width: 40%;" name="payment-method">
+              <option value="binance" selected>Binance</option>
+              <option value="upi">UPI</option>
+              <option value="gpay">GPay</option>
+            </select>
+          </div>
+
+          <!-- email, Transction ID with submit-btn-->
+
+          <div class="d-flex align-items-center gap-3 mb-3 flex-wrap shift_right">
+            <label for="email" class="form-label">Email ID</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" style="min-width: 40%;
+                text-align: center;
+                text-align-last: center;" name="email" required />
+          </div>
+
+          <div class="d-flex align-items-center gap-3 mb-3 flex-wrap shift_right">
+            <label for="txnId" class="form-label">Transaction ID</label>
+            <input type="text" class="form-control" id="txnId" placeholder="Enter your transaction ID" style="min-width: 40%;
+                text-align: center;
+                text-align-last: center;" name="transaction-id" required />
+          </div>
+
+          <!-- Note -->
+          <div class="container-fluid">
+            <p class="text-danger text-center container-fluid"><b>Note:</b> Ensure the account ID you paid with &
+              Transaction Id are same.
+            </p>
+          </div>
+
+          <!-- QR Code -->
+          <div class="text-center mb-3">
+            <img id="qrImage" src="assets/bianance.PNG" alt="QR Code" class="img-fluid"
+              style="max-width: 400px; width: 100%; height: auto;" />
+          </div>
+
+           <!-- Access Note -->
+          <div class="container-fluid">
+            <p class="text-danger text-center container-fluid"><b>Note:</b> After payment you will get access of panel
+              within <b>6-8</b>
+              hours through Discord.</p>
+          </div>
+
+           <!-- Checkbox -->
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="paymentConfirmed" name="paymentConfirmed">
+            <label class="form-check-label fw-semibold" for="paymentConfirmed">
+              Please confirm that you have successfully completed the payment.
+            </label>
+          </div>
+          
+          <div class="text-center" style="position: relative; left: -3vw;">
+            <button type="submit" class="btn btn-success px-4 fw-bold" value="submit" id="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+ <!-- Success Overlay -->
+ <div class="success-overlay d-none" id="successOverlay">
+  <div class="blur-background"></div>
+  <div class="content-wrapper">
+    <div class="success-box bg-white rounded shadow text-center p-5">
+      <div class="checkmark text-success mb-3" style="font-size: 4rem">
+        <i class="bi bi-patch-check-fill"></i>
+      </div>
+      <h2 class="text-success fw-bold mb-4">Submitted Successfully!</h2>
+      <button class="btn btn-success fw-bold px-4" id="okButton">Create ID</button>
+    </div>
+  </div>
+</div>
+
+<!-- Create Id to use panel -->
+<div class="success-overlay d-none" id="createOverlay">
+  <div class="blur-background"></div>
+  <div class="content-wrapper">
+    <div class="success-box bg-white rounded shadow text-center p-5" style="max-width: 500px; width: 100%; height: 400px;">
+      <div>
+        <h1 class="text-success mb-3 fw-bold">Create account</h1> <p class="text-success">(to access panel)</p>
+      </div>
+      <form name="create-account" method="post">
+        <div class="d-flex align-items-center gap-3 mb-3 flex-wrap">
+          <input type="text" class="form-control" id="IDUser" placeholder="Username" style="min-width: 100%;
+              text-align: center;
+              text-align-last: center;" name="Username" required />
+        </div>
+
+        <div class="d-flex align-items-center gap-3 mb-3 flex-wrap ">
+          <input type="password" class="form-control" id="IDPass" placeholder="Password" style="min-width: 100%;
+              text-align: center;
+              text-align-last: center;" name="password" required />
+        </div>
+      <button class="btn btn-success fw-bold px-4" id="createID">Create ID</button>
+      </form>
+      <span id="createAccountUpdate" class="text-success fw-bold d-block mt-3"></span>
+
+    </div>
+  </div>
+</div>
+
+
+ <!-- Footer -->
+ <footer class="footer text-start py-3">
+
+
+  <div class="container">
+    <div class="row justify-content-center text-center">
+
+      <!-- Company Info -->
+      <div class="col-md-6 mb-4">
+        <h5 class="footer-title">CRDY Products</h5>
+        <p>High-performance panels.<br>Delivery through mail | Secure Payments.</p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-6 mb-4">
+        <h5 class="footer-title">Contact</h5>
+        <p>Discord: <a href="https://discord.gg/mtz4eMZM3h" class="footer-link" target="_blank"><i
+              class="bi bi-discord"></i> &nbsp;CRDY Gamings</a></p>
+        <p>Youtube: <a href="https://www.youtube.com/@crdyxits" class="footer-link"><i class="bi bi-youtube"></i>
+            &nbsp;CRDY Xits</a></p>
+      </div>
+
+    </div>
+
+    <!-- Social Icons -->
+    <div class="text-center social-icons mt-4 mb-3">
+      <a href="https://discord.gg/mtz4eMZM3h"><i class="bi bi-discord"></i></a>
+      <a href="https://www.youtube.com/@crdyxits"><i class="bi bi-youtube"></i></a>
+      <!-- <a href="#"><i class="bi bi-linkedin"></i></a> -->
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center mt-3">
+      <small>© 2025 CRDY Panels. All rights reserved.</small>
+    </div>
+
+
+
+    <!-- web designer -->
+
+    <div class="text-center">
+      <p class="small mb-0">
+        Web design by &nbsp;
+        <a href="https://github.com/A-adarsh1" target="_blank" style="color: #a0bda0;"><i class="bi bi-github"></i>
+          A-adarsh1</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // time and amount show
+
+    const select = document.getElementById("timePeriod");
+    const amount = document.getElementById("amount");
+
+    const prices = {
+      1: "1 $",
+      2: "3 $",
+      3: "20 $",
+    };
+
+    select.addEventListener("change", () => {
+      const selectedValue = select.value;
+      amount.value = prices[selectedValue];
+    });
+  </script>
+  <script src="./app.js"></script>
+</body>
+
+</html>

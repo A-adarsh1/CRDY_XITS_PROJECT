@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 6rem;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.hero-section {
+  background-color: #32aa27; /* Bright green background */
+  height: 50vh;
+}
+
+.underline-hover:hover {
+  text-decoration: underline;
+}
+
+.pad {
+  padding: 11px;
+}
+
+
+.nav-height {
+  height: 12vh;
+  width: 100%;
+}
+
+.letter-space {
+  position: relative;
+  left: 15vw;
+  letter-spacing: 0.1em;
+  font-weight: 800;
+  font-size: x-large;
+}
+
+.position-right {
+  position: relative;
+  right: 15vw;
+}
+
+.bgc {
+  background: #32aa27;
+  color: #fff;
+}
+
+.spcColor:hover {
+  color: #32aa27;
+}
+
+.contactBg:hover {
+  background-color: #32aa27;
+  border-color: #32aa27;
+}
+
+.homeSec {
+  display: flex;
+}
+
+.margin-prop {
+  padding: 10px;
+}
+
+.inline-display {
+  display: inline;
+}
+
+.waterMark {
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: #32aa27;
+  font-size: smaller;
+}
+
+.padding-prop {
+  padding: 30px 0;
+}
+
+.degin-head {
+  font-size: larger;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.btn-link {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #000;
+}
+
+.btn-link:hover {
+  color: #198754; /* Bootstrap green color */
+}
+
+.card-title {
+  font-size: 1.2rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+
+.foot {
+  background-color: #162415;
+  height: 10rem;
+  color: #fff;
+}
+
+
+.overflow-sol {
+  overflow-x: hidden;
+}
+
+.bypassSection {
+  margin: 20px;
+  padding: 80px;
+}
+
+.features { 
+  font-size: 1.125rem;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  text-transform: none;
+  color: #595959;
+  text-align: start;
+}
+
+
+.contact-section {
+  background-color: #28b319;
+  min-height: 140vh;
+  padding: 60px 20px;
+  color: white;
+  width: 100%;
+}
+
+/* .footer {
+  background-color: #0c1e0a;
+  color: white;
+}
+
+.footer a {
+  color: white;
+  text-decoration: underline;
+} */
+
+#getInTouchBtn:hover {
+  background-color: white;
+  color: #28b319;
+  transition: all 0.3s ease;
+}
+
+footer {
+  background-color: #0c1e0a;
+  color: #d4d4d4;
+  padding: 60px 0 30px;
+}
+.footer-link {
+  color: #a0bda0;
+  text-decoration: none;
+}
+.footer-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.social-icons a {
+  color: #a0bda0;
+  margin-right: 15px;
+  font-size: 1.25rem;
+}
+.social-icons a:hover {
+  color: #ffffff;
+}
+.footer-title {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+
+
+
+.form-label, .payment-label{
+  min-width: 120px;
+  font-weight: 600;
+  margin-bottom: 0;
+  align-self: center;
+}
+.form-select, .form-control{
+  max-width: 200px;
+}
+
+
+.select-text {
+  text-align: center;
+  text-align-last: center; /* For most modern browsers */
+}
+
+.shift_right {
+  gap: 3rem;
+  position: relative;
+  left: 5vw;
+}
+
+/* success */
+
+
+.success-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blur-background {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  z-index: -1;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 10;
+}
+
+.success-box {
+  max-width: 400px;
+  width: 90%;
+}
+
+
+@media only screen and (max-width: 432px) {
+  /* Default (mobile-first) styling */
+.shift_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0rem;
+}
+
+.shift_right label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.shift_right input,
+.shift_right select {
+  width: 90%;
+  max-width: 300px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+  
+}
